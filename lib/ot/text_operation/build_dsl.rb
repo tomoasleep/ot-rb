@@ -16,15 +16,15 @@ module OT
 
         to = TextOperation.new
 
-        to.retain(from) if from > 0
+        to.retain(from) if from.positive?
 
-        to.delete(delete_length) if delete_length > 0
+        to.delete(delete_length) if delete_length.positive?
 
-        to.insert(insert) if insert_length > 0
+        to.insert(insert) if insert_length.positive?
 
         remain = base.length - from - delete_length
 
-        to.retain(remain) if remain > 0
+        to.retain(remain) if remain.positive?
 
         to
       end

@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "The ruby port of ot.js"
   spec.description = "The ruby port of ot.js"
   spec.homepage = "https://github.com/tomoasleep/ot-rb"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 

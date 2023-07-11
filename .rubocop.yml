@@ -1,6 +1,17 @@
 AllCops:
   TargetRubyVersion: 3.0
 
+Style/Documentation:
+  Enabled: false
+
+Style/NumericPredicate:
+  Exclude:
+    - 'lib/ot/text_operation.rb'
+
+Style/SelfAssignment:
+  Exclude:
+    - 'lib/ot/text_operation.rb'
+
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
@@ -9,5 +20,26 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/IfUnlessModifier:
+  Exclude:
+    - 'lib/ot/text_operation.rb'
+
 Layout/LineLength:
-  Max: 120
+  Enabled: false
+
+Lint/MissingCopEnableDirective:
+  Exclude:
+    - 'lib/ot/text_operation.rb'
+
+Metrics:
+  Enabled: false
+
+Naming:
+  Exclude:
+    - 'lib/ot/text_operation.rb'
+
+Naming/FileName:
+  AllowedAcronyms:
+    - OT
+  Exclude:
+    - 'lib/ot-rb.rb'

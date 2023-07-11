@@ -3,14 +3,6 @@
 # This is a port of ot.js to Ruby.
 # https://github.com/Operational-Transformation/ot.js/blob/v0.0.15/lib/text-operation.js
 
-# Disable some cops because this class is a port of ot.js.
-#
-# rubocop:disable Metrics/*
-# rubocop:disable Layout/LineLength
-# rubocop:disable Naming/*
-# rubocop:disable Style/SelfAssignment
-# rubocop:disable Style/NumericPredicate
-
 # Copyright (c) 2012-2014 Tim Baumann, http://timbaumann.info
 # Released under the MIT license
 # https://opensource.org/licenses/mit-license.php
@@ -52,7 +44,7 @@ module OT
     # @param n [Integer]
     # @return [TextOperation]
     def retain(n)
-      fail ArgumentError, "retain expects an integer" unless n.is_a?(Integer)
+      raise ArgumentError, "retain expects an integer" unless n.is_a?(Integer)
       return self if n == 0
 
       @base_length += n

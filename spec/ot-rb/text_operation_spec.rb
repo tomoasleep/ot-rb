@@ -77,6 +77,5 @@ RSpec.describe OT::TextOperation do
         expect(op1.compose(op2t)).to be_operation.from("hoge").to("hoboyo")
       end
     end
-
   end
 end
