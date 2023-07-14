@@ -5,3 +5,4 @@ end
 
 require_relative "ot/version"
 require_relative "ot/text_operation"
+require_relative "ot/wrapped_operation"
